@@ -1,0 +1,32 @@
+.page-footer {
+  background-color: #2f303a;
+
+  & .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.address-section {
+  display: block;
+}
+
+.page-footer__address-section {
+  margin-top: 20px;
+}
+
+.address-list__item + .address-list__item {
+  display: block;
+  margin-top: 9px;
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.footer-form {
+  margin-left: auto;
+}

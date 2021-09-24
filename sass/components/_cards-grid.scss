@@ -1,0 +1,23 @@
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-right: calc(-1 * var(--main-gap));
+  margin-bottom: -30px;
+
+  &__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: var(--main-gap);
+    margin-bottom: 30px;
+
+    background: #ffffff;
+
+    @include animation-effect(box-shadow);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+}

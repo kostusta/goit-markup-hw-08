@@ -1,0 +1,25 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+
+  & .container {
+    display: flex;
+  }
+}
+
+.navigation-section {
+  display: flex;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+}
+
+.page-header__contacts {
+  margin-left: auto;
+}

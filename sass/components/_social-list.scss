@@ -1,0 +1,44 @@
+.social-list {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    @include flex-element-center();
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    @include animation-effect(background-color);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: #ffffff;
+    }
+
+    &--without-bg-color {
+      color: var(--main-text-color);
+    }
+
+    &--with-bg-color {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.team-section__social-list {
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.footer__social-list {
+  margin-top: 20px;
+}

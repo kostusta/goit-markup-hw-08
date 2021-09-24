@@ -1,0 +1,7 @@
+.filters-list {
+  @include flex-element-center();
+
+  &__item + &__item {
+    margin-left: 8px;
+  }
+}
