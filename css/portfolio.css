@@ -445,7 +445,7 @@ textarea {
   .cards-grid__item {
     flex-basis: calc(100% / 3 - 30px);
     margin-right: var(--main-gap);
-    margin-bottom: 30px;
+    margin-bottom: var(--main-gap);
   }
 }
 

@@ -595,38 +595,36 @@ textarea {
   }
 }
 
-.our-works-list {
-  display: flex;
-  margin-top: 50px;
-}
-
-.our-works-list__item:not(:last-child) {
-  margin-right: var(--main-gap);
-}
-
-.our-works-list__wrapper {
-  position: relative;
-}
-
-.our-works-list__picture {
-  display: block;
-}
-
-.our-works-list__label {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
-  padding: 27px 0;
+@media screen and (min-width: 1200px) {
+  .our-works-list {
+    display: flex;
+    margin-top: 50px;
+  }
+  .our-works-list__item:not(:last-child) {
+    margin-right: var(--main-gap);
+  }
+  .our-works-list__wrapper {
+    position: relative;
+  }
+  .our-works-list__picture {
+    display: block;
+  }
+  .our-works-list__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    padding: 27px 0;
+  }
 }
 
 .team-section {
