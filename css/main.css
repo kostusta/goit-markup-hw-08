@@ -557,6 +557,19 @@ textarea {
   padding-bottom: var(--section-padding-bottom);
 }
 
+@media screen and (max-width: 1199px) {
+  .our-work-sectoin {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+}
+
 .our-works-list {
   display: flex;
   margin-top: 50px;
