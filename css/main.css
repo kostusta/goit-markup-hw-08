@@ -786,13 +786,15 @@ textarea {
   align-items: center;
 }
 
-.page-footer .contacts-wrap {
-  text-align: center;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer .contacts-wrap {
     margin-left: 76px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .page-footer .contacts-wrap {
+    text-align: center;
   }
 }
 
