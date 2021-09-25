@@ -92,6 +92,14 @@ textarea {
   color: var(--logo-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .logo {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .logo--dark-color {
   color: #000000;
 }
@@ -235,6 +243,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .subscribe-form__button {
     margin-left: 12px;
+    margin-top: 0;
     margin-right: 0;
   }
 }
@@ -777,10 +786,21 @@ textarea {
   align-items: center;
 }
 
+.page-footer .contacts-wrap {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer .contacts-wrap {
+    margin-left: 76px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .page-footer .container {
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: baseline;
   }
 }
 
@@ -797,8 +817,26 @@ textarea {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
+  }
+}
+
 .footer-social .secondary-title {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -811,14 +849,27 @@ textarea {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-top: 0;
+    margin-left: auto;
+  }
+}
+
 .footer-form .secondary-title {
   display: block;
   text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-form {
-    margin-left: auto;
+  .footer-form .secondary-title {
+    text-align: left;
   }
 }
 
@@ -837,7 +888,7 @@ textarea {
 
 .subscribe-form__input {
   color: #ffffff;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -846,6 +897,20 @@ textarea {
   border-radius: 4px;
   background-color: rgba(33, 150, 243, 0);
   outline: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form__input {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
+  }
 }
 
 .subscribe-form__input::placeholder {
@@ -857,15 +922,15 @@ textarea {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer__subscribe-form {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 1200px) {
-  .subscribe-form {
+  .footer__subscribe-form {
     display: flex;
     align-items: center;
   }
-}
-
-.footer__subscribe-form {
-  margin-top: 20px;
 }
 
 .backdrop {

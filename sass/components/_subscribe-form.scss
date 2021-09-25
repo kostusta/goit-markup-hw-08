@@ -2,7 +2,7 @@
   &__input {
     color: #ffffff;
 
-    width: 358px;
+    width: 100%;
     height: 50px;
     padding: 15px 16px;
 
@@ -12,6 +12,16 @@
     border-radius: 4px;
     background-color: rgba(33, 150, 243, 0);
     outline: 0;
+
+    @media screen and(min-width:768px) {
+      width: 450px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media screen and(min-width:1200px) {
+      width: 358px;
+    }
 
     &::placeholder {
       font-size: 16px;
@@ -24,16 +34,13 @@
       color: rgba(255, 255, 255, 0.6);
     }
   }
+}
 
-  @media screen and(min-width:7680px) {
-  }
+.footer__subscribe-form {
+  margin-top: 20px;
 
   @media screen and(min-width:1200px) {
     display: flex;
     align-items: center;
   }
-}
-
-.footer__subscribe-form {
-  margin-top: 20px;
 }
