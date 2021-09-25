@@ -6,8 +6,10 @@
   --accent-color: #2196f3;
   --current-page-marker-color: #2196f3;
   --btn-focus-hover-color: #188ce8;
-  --section-padding-top: 94px;
-  --section-padding-bottom: 94px;
+  --section-padding-top-desktop: 94px;
+  --section-padding-bottom-desktop: 94px;
+  --section-padding-top-mobile-tablet: 60px;
+  --section-padding-bottom-mobile-tablet: 60px;
   --main-gap: 30px;
 }
 
@@ -61,7 +63,6 @@ textarea {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid green;
 }
 
 @media screen and (min-width: 480px) {
@@ -472,32 +473,35 @@ textarea {
 }
 
 .benefits-section {
-  padding-top: var(--section-padding-top);
-  padding-bottom: var(--section-padding-bottom);
+  padding-top: var(--section-padding-top-mobile-tablet);
+  padding-bottom: var(--section-padding-bottom-mobile-tablet);
 }
 
-.benefits-list {
-  display: flex;
-}
-
-.benefits-list__item + .benefits-list__item {
-  margin-left: var(--main-gap);
+@media screen and (min-width: 1200px) {
+  .benefits-section {
+    padding-top: var(--section-padding-top-desktop);
+    padding-bottom: var(--section-padding-bottom-desktop);
+  }
 }
 
 .benefits-list__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
 
+.benefits-list__item:not(:last-child) {
+  margin-bottom: var(--main-gap);
+}
+
 .benefits-list__subtitle {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-title-color);
@@ -506,10 +510,47 @@ textarea {
 
 .benefits-list__text {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: calc(24 / 16);
   letter-spacing: 0.03em;
   display: block;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .benefits-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  .benefits-list__item {
+    margin-right: var(--main-gap);
+    margin-bottom: var(--main-gap);
+  }
+  .benefits-list__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    flex-wrap: nowrap;
+  }
+  .benefits-list__item:not(:last-child) {
+    margin-right: var(--main-gap);
+  }
+  .benefits-list__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+  }
 }
 
 .our-work-sectoin {
