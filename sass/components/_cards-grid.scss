@@ -13,23 +13,26 @@
     }
   }
 
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   @media screen and (min-width: 768px) {
     margin-top: 14px;
     display: flex;
     flex-wrap: wrap;
 
     margin-right: calc(-1 * var(--main-gap));
-    margin-bottom: -30px;
 
     &__item {
       flex-basis: calc(100% / 2 - 30px);
       margin-right: var(--main-gap);
-      margin-bottom: 30px;
     }
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 50px;
+    margin-bottom: -30px;
 
     &__item {
       flex-basis: calc(100% / 3 - 30px);
