@@ -1,7 +1,22 @@
 .filters-list {
   @include flex-element-center();
+  flex-wrap: wrap;
+  justify-content: start;
 
-  &__item + &__item {
-    margin-left: 8px;
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    &__item {
+      margin-bottom: 0;
+    }
   }
 }

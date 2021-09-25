@@ -18,7 +18,7 @@
 
   <body>
     <!-- Header -->
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container">
         <nav class="navigation-section">
           <a class="logo link" href="./index.html" lang="en">Web<span class="logo logo--dark-color">Studio</span></a>
@@ -56,7 +56,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- Our projects section -->
@@ -86,13 +86,21 @@
               <article class="card">
                 <a class="card__link link" href="">
                   <div class="card__overlay">
-                    <img
-                    class="card__preview"
-                    src="./images/portfolio/portfolio-pic-1-desktop@1x.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="295"
-                    />
+                    
+                    <picture>
+                      <source 
+                        srcset="./images/portfolio/portfolio-pic-1-desktop@1x.jpg 1x, ./images/portfolio/portfolio-pic-1-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-1-tablet@1x.jpg 1x, ./images/portfolio/portfolio-pic-1-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-1-mobile@1x.jpg 1x, ./images/portfolio/portfolio-pic-1-mobile@2x.jpg 2x"
+                        media="(min-width:320px)">
+
+                      <img class="card__preview" src="./images/portfolio/portfolio-pic-1-desktop@1x.jpg" alt="Ноутбук"/>
+                    </picture>
+                    
                     <p class="card__description">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
@@ -108,13 +116,21 @@
               <article class="card">
                 <a class="card__link link" href="">
                   <div class="card__overlay">
-                    <img
-                      class="card__preview"
-                      src="./images/portfolio/portfolio-pic-2-desktop@1x.jpg"
-                      alt="Спортсмены играют в баскетбол"
-                      width="370"
-                      height="295"
-                    />
+
+                    <picture>
+                      <source 
+                        srcset="./images/portfolio/portfolio-pic-2-desktop@1x.jpg 1x, ./images/portfolio/portfolio-pic-2-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-2-tablet@1x.jpg 1x, ./images/portfolio/portfolio-pic-2-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-2-mobile@1x.jpg 1x, ./images/portfolio/portfolio-pic-2-mobile@2x.jpg 2x"
+                        media="(min-width:320px)">
+
+                      <img class="card__preview" src="./images/portfolio/portfolio-pic-2-desktop@1x.jpg" alt="Спортсмены играют в баскетбол"/>
+                    </picture>
+                    
                     <p class="card__description">Постер <span lang="en">New Orlean vs Golden Star</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                       шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
@@ -132,13 +148,22 @@
               <article class="card">
                 <a class="card__link link" href="">
                   <div class="card__overlay">
-                    <img
-                      class="card__preview"
-                      src="./images/portfolio/portfolio-pic-3-desktop@1x.jpg"
-                      alt="Логотип ресторана в виде рыбы"
-                      width="370"
-                      height="295"
-                    />
+
+                    <picture>
+                      <source 
+                        srcset="./images/portfolio/portfolio-pic-3-desktop@1x.jpg 1x, ./images/portfolio/portfolio-pic-3-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-3-tablet@1x.jpg 1x, ./images/portfolio/portfolio-pic-3-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-3-mobile@1x.jpg 1x, ./images/portfolio/portfolio-pic-3-mobile@2x.jpg 2x"
+                        media="(min-width:320px)">
+
+                      <img class="card__preview" src="./images/portfolio/portfolio-pic-3-desktop@1x.jpg"
+                        alt="Логотип ресторана в виде рыбы" />
+                    </picture>
+
                     <p class="card__description">Ресторан <span lang="en">Seafood</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                       шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
@@ -154,13 +179,21 @@
               <article class="card">
                 <a class="card__link link" href="">
                   <div class="card__overlay">
-                    <img
-                      class="card__preview"
-                      src="./images/portfolio/portfolio-pic-4-desktop@1x.jpg"
-                      alt="Беспроводные аушники"
-                      width="370"
-                      height="295"
-                    />
+
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-4-desktop@1x.jpg 1x, ./images/portfolio/portfolio-pic-4-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-4-tablet@1x.jpg 1x, ./images/portfolio/portfolio-pic-4-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-4-mobile@1x.jpg 1x, ./images/portfolio/portfolio-pic-4-mobile@2x.jpg 2x"
+                        media="(min-width:320px)">
+
+                      <img class="card__preview" src="./images/portfolio/portfolio-pic-4-desktop@1x.jpg" alt="Беспроводные аушники" />
+                    </picture>
+                    
                     <p class="card__description">Проект <span lang="en">Prime</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                       шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
@@ -176,13 +209,21 @@
               <article class="card">
                 <a class="card__link link" href="">
                   <div class="card__overlay">
-                    <img
-                      class="card__preview"
-                      src="./images/portfolio/portfolio-pic-5-desktop@1x.jpg"
-                      alt="Две коробки"
-                      width="370"
-                      height="295"
-                    />
+
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-5-desktop@1x.jpg 1x, ./images/portfolio/portfolio-pic-5-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-5-tablet@1x.jpg 1x, ./images/portfolio/portfolio-pic-5-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-5-mobile@1x.jpg 1x, ./images/portfolio/portfolio-pic-5-mobile@2x.jpg 2x"
+                        media="(min-width:320px)">
+
+                      <img class="card__preview" src="./images/portfolio/portfolio-pic-5-desktop@1x.jpg" alt="Две коробки" />
+                    </picture>
+
                     <p class="card__description">Проект <span lang="en">Boxes</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                       шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
@@ -198,14 +239,21 @@
               <article class="card">
                 <a class="card__link link" href="">
                   <div class="card__overlay">
-                    <img
-                      class="card__preview"
-                      src="./images/portfolio/portfolio-pic-6-desktop@1x.jpg"
-                      lang="en"
-                      alt="iMac"
-                      width="370"
-                      height="295"
-                    />
+
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-6-desktop@1x.jpg 1x, ./images/portfolio/portfolio-pic-6-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-6-tablet@1x.jpg 1x, ./images/portfolio/portfolio-pic-6-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-6-mobile@1x.jpg 1x, ./images/portfolio/portfolio-pic-6-mobile@2x.jpg 2x"
+                        media="(min-width:320px)">
+
+                      <img class="card__preview" src="./images/portfolio/portfolio-pic-6-desktop@1x.jpg" lang="en" alt="iMac" />
+                    </picture>
+                    
                     <p class="card__description"> <span lang="en">Inspiration has no Borders</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                       шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
@@ -221,13 +269,21 @@
               <article class="card">
                 <a class="card__link link" href="">
                   <div class="card__overlay">
-                    <img
-                      class="card__preview"
-                      src="./images/portfolio/portfolio-pic-7-desktop@1x.jpg"
-                      alt="Разворот журнала"
-                      width="370"
-                      height="295"
-                    />
+
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-7-desktop@1x.jpg 1x, ./images/portfolio/portfolio-pic-7-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-7-tablet@1x.jpg 1x, ./images/portfolio/portfolio-pic-7-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-7-mobile@1x.jpg 1x, ./images/portfolio/portfolio-pic-7-mobile@2x.jpg 2x"
+                        media="(min-width:320px)">
+
+                      <img class="card__preview" src="./images/portfolio/portfolio-pic-7-desktop@1x.jpg" alt="Разворот журнала" />
+                    </picture>
+                    
                     <p class="card__description">Издание <span lang="en">Limited Edition</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                       шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
@@ -243,13 +299,21 @@
               <article class="card">
                 <a class="card__link link" href="">
                   <div class="card__overlay">
-                    <img
-                      class="card__preview"
-                      src="./images/portfolio/portfolio-pic-8-desktop@1x.jpg"
-                      alt="Этикетка"
-                      width="370"
-                      height="295"
-                    />
+
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-8-desktop@1x.jpg 1x, ./images/portfolio/portfolio-pic-8-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-8-tablet@1x.jpg 1x, ./images/portfolio/portfolio-pic-8-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-8-mobile@1x.jpg 1x, ./images/portfolio/portfolio-pic-8-mobile@2x.jpg 2x"
+                        media="(min-width:320px)">
+
+                      <img class="card__preview" src="./images/portfolio/portfolio-pic-8-desktop@1x.jpg" alt="Этикетка" />
+                    </picture>
+
                     <p class="card__description">Проект <span lang="en">LAB</span> это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                       шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
@@ -265,13 +329,22 @@
               <article class="card">
                 <a class="card__link link" href="">
                   <div class="card__overlay">
-                    <img
-                      class="card__preview"
-                      src="./images/portfolio/portfolio-pic-9-desktop@1x.jpg"
-                      alt="Процесс набора текста на клавиатуре ноутбука"
-                      width="370"
-                      height="295"
-                    />
+
+                    <picture>
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-9-desktop@1x.jpg 1x, ./images/portfolio/portfolio-pic-9-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-9-tablet@1x.jpg x1, ./images/portfolio/portfolio-pic-9-tablet@2x.jpg 2x"
+                        media="(min-width:768px)">
+                      <source
+                        srcset="./images/portfolio/portfolio-pic-9-mobile@1x.jpg 1x, ./images/portfolio/portfolio-pic-9-mobile@2x.jpg 2x"
+                        media="(min-width:320px)">
+
+                      <img class="card__preview" src="./images/portfolio/portfolio-pic-9-desktop@1x.jpg"
+                        alt="Процесс набора текста на клавиатуре ноутбука" />
+                    </picture>
+                    
                     <p class="card__description"> <span lang="en">Growing Business</span>это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                       шпионажа и атак на защищённые сервера конкурентов.</p>
                   </div>
@@ -288,7 +361,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container">
         <div class="contacts-wrap">
           <a class="logo link" href="./index.html" lang="en">Web<span class=" logo logo--light-color">Studio</span></a>
@@ -356,7 +429,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
   </body>
 </html>

@@ -367,30 +367,65 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: start;
 }
 
-.filters-list__item + .filters-list__item {
-  margin-left: 8px;
+.filters-list__item {
+  margin-bottom: 15px;
+}
+
+.filters-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .filters-list__item {
+    margin-bottom: 0;
+  }
 }
 
 .cards-grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-right: calc(-1 * var(--main-gap));
-  margin-bottom: -30px;
+  margin-top: 40px;
 }
 
 .cards-grid__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-right: var(--main-gap);
-  margin-bottom: 30px;
   background: #ffffff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards-grid__item:hover, .cards-grid__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .cards-grid {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--main-gap));
+    margin-bottom: -30px;
+  }
+  .cards-grid__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-right: var(--main-gap);
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cards-grid {
+    margin-top: 50px;
+  }
+  .cards-grid__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: var(--main-gap);
+    margin-bottom: 30px;
+  }
 }
 
 .card__overlay {
@@ -401,6 +436,7 @@ textarea {
 .card__preview {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .card__description {
@@ -502,8 +538,15 @@ textarea {
 }
 
 .projects {
-  padding-top: var(--section-padding-top);
-  padding-bottom: var(--section-padding-bottom);
+  padding-top: var(--section-padding-top-mobile-tablet);
+  padding-bottom: var(--section-padding-bottom-mobile-tablet);
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: var(--section-padding-top-desktop);
+    padding-bottom: var(--section-padding-bottom-desktop);
+  }
 }
 
 .page-footer {
