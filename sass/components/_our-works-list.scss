@@ -2,8 +2,8 @@
   display: flex;
   margin-top: 50px;
 
-  &__item + &__item {
-    margin-left: var(--main-gap);
+  &__item:not(:last-child) {
+    margin-right: var(--main-gap);
   }
 
   &__wrapper {

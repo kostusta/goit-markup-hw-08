@@ -1,10 +1,5 @@
 .team-members-list {
-  display: flex;
-  margin-top: 50px;
-
-  &__item + &__item {
-    margin-left: var(--main-gap);
-  }
+  margin-top: 30px;
 
   &__item {
     background: #ffffff;
@@ -12,16 +7,24 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     padding-bottom: 30px;
+
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: var(--main-gap);
   }
 
   &__photo {
     display: block;
+    width: 100%;
+    height: auto;
   }
 
   &__name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: calc(19 / 16);
     letter-spacing: 0.03em;
     text-align: center;
 
@@ -32,10 +35,32 @@
 
   &__profession {
     font-size: 16px;
-    line-height: 1.19;
+    line-height: cacl(19 / 16);
     letter-spacing: 0.03em;
     text-align: center;
 
     margin-top: 10px;
+  }
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+
+    &__item {
+      margin-right: var(--main-gap);
+      margin-bottom: var(--main-gap);
+      flex-basis: calc(100% / 2 - 30px);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
   }
 }

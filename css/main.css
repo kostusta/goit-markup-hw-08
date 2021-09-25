@@ -297,11 +297,18 @@ textarea {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.67;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
 }
 
 .secondary-title {
@@ -575,8 +582,8 @@ textarea {
   margin-top: 50px;
 }
 
-.our-works-list__item + .our-works-list__item {
-  margin-left: var(--main-gap);
+.our-works-list__item:not(:last-child) {
+  margin-right: var(--main-gap);
 }
 
 .our-works-list__wrapper {
@@ -605,18 +612,20 @@ textarea {
 }
 
 .team-section {
-  padding-top: var(--section-padding-top);
-  padding-bottom: var(--section-padding-bottom);
+  padding-top: var(--section-padding-top-mobile-tablet);
+  padding-bottom: var(--section-padding-bottom-mobile-tablet);
   background: #f5f4fa;
 }
 
-.team-members-list {
-  display: flex;
-  margin-top: 50px;
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: var(--section-padding-top-desktop);
+    padding-bottom: var(--section-padding-bottom-desktop);
+  }
 }
 
-.team-members-list__item + .team-members-list__item {
-  margin-left: var(--main-gap);
+.team-members-list {
+  margin-top: 30px;
 }
 
 .team-members-list__item {
@@ -624,16 +633,23 @@ textarea {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  align-items: center;
+}
+
+.team-members-list__item:not(:last-child) {
+  margin-bottom: var(--main-gap);
 }
 
 .team-members-list__photo {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .team-members-list__name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
@@ -642,10 +658,32 @@ textarea {
 
 .team-members-list__profession {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: cacl(19/16);
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-members-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  .team-members-list__item {
+    margin-right: var(--main-gap);
+    margin-bottom: var(--main-gap);
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-members-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .clients-section {
