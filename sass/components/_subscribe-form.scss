@@ -1,7 +1,4 @@
 .subscribe-form {
-  display: flex;
-  align-items: center;
-
   &__input {
     color: #ffffff;
 
@@ -26,6 +23,14 @@
 
       color: rgba(255, 255, 255, 0.6);
     }
+  }
+
+  @media screen and(min-width:7680px) {
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    align-items: center;
   }
 }
 

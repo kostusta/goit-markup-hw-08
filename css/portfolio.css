@@ -226,8 +226,17 @@ textarea {
 }
 
 .subscribe-form__button {
-  margin-left: 12px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 28px 10px 29px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__button {
+    margin-left: 12px;
+    margin-right: 0;
+  }
 }
 
 .secondary-button {
@@ -560,7 +569,53 @@ textarea {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer .container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.footer-social {
+  margin-top: 60px;
+}
+
+.footer-social .secondary-title {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
+  }
+}
+
+.footer-form {
+  margin-top: 60px;
+}
+
+.footer-form .secondary-title {
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: auto;
+  }
 }
 
 .address-section {
@@ -574,19 +629,6 @@ textarea {
 .address-list__item + .address-list__item {
   display: block;
   margin-top: 9px;
-}
-
-.footer-social {
-  margin-left: 70px;
-}
-
-.footer-form {
-  margin-left: auto;
-}
-
-.subscribe-form {
-  display: flex;
-  align-items: center;
 }
 
 .subscribe-form__input {
@@ -609,6 +651,13 @@ textarea {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer__subscribe-form {
