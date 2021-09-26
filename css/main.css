@@ -87,16 +87,24 @@ textarea {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--logo-color);
 }
 
 @media screen and (max-width: 1199px) {
   .logo {
-    display: inline-block;
+    font-size: 24px;
+    line-height: calc(28 / 24);
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -460,6 +468,12 @@ textarea {
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contacts {
     display: flex;
@@ -488,6 +502,12 @@ textarea {
 
 .navigation-list {
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation-list {
+    display: none;
+  }
 }
 
 .navigation-list__item + .navigation-list__item {
