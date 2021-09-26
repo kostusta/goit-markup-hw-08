@@ -9,11 +9,13 @@
   }
 
   &--header-text-styles {
+    font-size: 26px;
+    line-height: calc(30 / 26);
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
+    color: var(--accent-color);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       font-size: 34px;
       line-height: calc(40 / 34);
     }
@@ -21,6 +23,7 @@
     @media screen and (min-width: 768px) {
       font-size: 12px;
       line-height: calc(14 / 12);
+      color: var(--main-text-color);
     }
 
     @media screen and (min-width: 1200px) {
@@ -37,9 +40,14 @@
   }
 
   &__icon {
-    fill: currentColor;
-    margin-right: 10px;
-    max-height: 100%;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      fill: currentColor;
+      margin-right: 10px;
+      max-height: 100%;
+    }
   }
 }
 
