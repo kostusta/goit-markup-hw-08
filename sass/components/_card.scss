@@ -1,4 +1,10 @@
 .card {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
   &__overlay {
     position: relative;
     overflow: hidden;
@@ -40,6 +46,10 @@
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-grow: 1;
+    }
   }
 
   &__title {

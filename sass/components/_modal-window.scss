@@ -1,6 +1,6 @@
 .modal-window {
   position: absolute;
-  width: 450px;
+  width: 100%;
   min-height: 581px;
   left: 50%;
   top: 50%;
@@ -15,6 +15,10 @@
   transform: translate(-50%, -50%) scale(1);
 
   @include animation-effect(transform);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
