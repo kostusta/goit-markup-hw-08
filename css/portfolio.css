@@ -771,9 +771,9 @@ textarea {
   margin-top: 64px;
 }
 
-@media screen and (max-width: 767px) {
-  .social-links {
-    display: flex;
+@media screen and (max-width: 479px) {
+  .social-links__item {
+    margin-bottom: 10px;
   }
 }
 
@@ -793,10 +793,10 @@ textarea {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 479px) {
-  .social-links__link {
-    font-size: 12px;
-    line-height: calc(14 / 12);
+@media screen and (max-width: 767px) {
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
