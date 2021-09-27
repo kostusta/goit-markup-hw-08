@@ -58,6 +58,18 @@ textarea {
   clip: rect(0 0 0 0);
 }
 
+.section {
+  padding-top: var(--section-padding-top-mobile-tablet);
+  padding-bottom: var(--section-padding-bottom-mobile-tablet);
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: var(--section-padding-top-desktop);
+    padding-bottom: var(--section-padding-bottom-desktop);
+  }
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -85,24 +97,24 @@ textarea {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--logo-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .logo {
-    font-size: 24px;
-    line-height: calc(28 / 24);
+    padding: 0;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    font-size: 26px;
+    line-height: calc(31 / 26);
   }
 }
 
@@ -761,18 +773,6 @@ textarea {
   }
 }
 
-.benefits-section {
-  padding-top: var(--section-padding-top-mobile-tablet);
-  padding-bottom: var(--section-padding-bottom-mobile-tablet);
-}
-
-@media screen and (min-width: 1200px) {
-  .benefits-section {
-    padding-top: var(--section-padding-top-desktop);
-    padding-bottom: var(--section-padding-bottom-desktop);
-  }
-}
-
 .benefits-list__thumb {
   display: flex;
   justify-content: center;
@@ -892,16 +892,7 @@ textarea {
 }
 
 .team-section {
-  padding-top: var(--section-padding-top-mobile-tablet);
-  padding-bottom: var(--section-padding-bottom-mobile-tablet);
   background: #f5f4fa;
-}
-
-@media screen and (min-width: 1200px) {
-  .team-section {
-    padding-top: var(--section-padding-top-desktop);
-    padding-bottom: var(--section-padding-bottom-desktop);
-  }
 }
 
 .team-members-list {
@@ -963,18 +954,6 @@ textarea {
     margin-top: 50px;
     display: flex;
     flex-wrap: nowrap;
-  }
-}
-
-.clients-section {
-  padding-top: var(--section-padding-top-mobile-tablet);
-  padding-bottom: var(--section-padding-bottom-mobile-tablet);
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-section {
-    padding-top: var(--section-padding-top-desktop);
-    padding-bottom: var(--section-padding-bottom-desktop);
   }
 }
 

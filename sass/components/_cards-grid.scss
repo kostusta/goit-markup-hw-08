@@ -1,6 +1,9 @@
 .cards-grid {
   margin-top: 40px;
 
+  &__link {
+  }
+
   &__item {
     background: #ffffff;
 
@@ -39,8 +42,5 @@
       margin-right: var(--main-gap);
       margin-bottom: var(--main-gap);
     }
-  }
-
-  &__link {
   }
 }

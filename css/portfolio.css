@@ -58,6 +58,18 @@ textarea {
   clip: rect(0 0 0 0);
 }
 
+.section {
+  padding-top: var(--section-padding-top-mobile-tablet);
+  padding-bottom: var(--section-padding-bottom-mobile-tablet);
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: var(--section-padding-top-desktop);
+    padding-bottom: var(--section-padding-bottom-desktop);
+  }
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -85,24 +97,24 @@ textarea {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--logo-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .logo {
-    font-size: 24px;
-    line-height: calc(28 / 24);
+    padding: 0;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) {
   .logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    font-size: 26px;
+    line-height: calc(31 / 26);
   }
 }
 
@@ -538,14 +550,6 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-}
-
 .card__overlay {
   position: relative;
   overflow: hidden;
@@ -585,12 +589,6 @@ textarea {
   border-bottom: 1px solid #eeeeee;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card__info {
-    flex-grow: 1;
-  }
-}
-
 .card__title {
   font-weight: 700;
   font-size: 18px;
@@ -605,6 +603,17 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-top: 4px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .card__info {
+    flex-grow: 1;
+  }
 }
 
 .page-header {
@@ -833,18 +842,6 @@ textarea {
   }
   .mobile-menu-button-close__icon {
     color: inherit;
-  }
-}
-
-.projects {
-  padding-top: var(--section-padding-top-mobile-tablet);
-  padding-bottom: var(--section-padding-bottom-mobile-tablet);
-}
-
-@media screen and (min-width: 1200px) {
-  .projects {
-    padding-top: var(--section-padding-top-desktop);
-    padding-bottom: var(--section-padding-bottom-desktop);
   }
 }
 

@@ -1,20 +1,20 @@
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   color: var(--logo-color);
 
-  @media screen and (max-width: 1199px) {
-    font-size: 24px;
-    line-height: calc(28 / 24);
+  @media screen and(min-width:768px) {
+    padding: 0;
   }
 
-  @media screen and(max-width:767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
   }
 
   &--dark-color {
